@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+img,
+span,
+a,
+div,
+i {
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3,
+h1 {
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+p {
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+
+/* common css ends */
+
+
+
+
+
+/* footer part Started */
+
+
+footer {
+    background: url(../images/footer/footerim.jpg) no-repeat center;
+    background-size: cover;
+}
+
+footer .footer_overlay {
+    background: rgba(0, 0, 0, 0.80);
+    padding-top: 30px;
+}
+
+footer .footer_log {
+    padding-bottom: 30px;
+}
+
+footer h4 {
+    color: #0ff020;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 30px;
+}
+
+footer .footer_content {
+    padding-bottom: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+}
+
+footer .footer_content .opening_time ul li {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+footer .footer_content .opening_time ul li span {
+    width: 110px;
+    display: inline-block;
+}
+
+footer .footer_content p {
+    color: aliceblue;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+footer .footer_content p i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #12de59;
+    font-size: 16px;
+}
+
+footer .footer_content p span {
+    display: block;
+    font-weight: 700;
+}
+
+footer .footer_content .flicker ul li {
+    float: left;
+    width: 25%;
+    padding: 0 5px 10px;
+
+}
+
+footer .footer_content .flicker ul li img {
+    width: 100%;
+}
+
+footer .footer_content .flicker h4 {
+    padding-left: 5px;
+}
+
+footer .footer_content .contacts ul.location li {
+    position: relative;
+    padding-left: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 15px;
+}
+
+footer .footer_content .contacts ul.location li a {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .footer_content .contacts ul.location li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: red;
+}
+
+footer .footer_content ul.social li {
+    display: inline-block;
+}
+
+footer .footer_content ul.social li a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid white;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+footer .footer_content ul.social li a i:hover {
+    background: #a70808;
+    border-color: aqua;
+}
+
+
+footer .copy_right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .copy_right p {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+footer .copy_right p a{
+    color: red;
+    
+}
+
+
+
+
+
+
+
+
+/* footer part ends */
