@@ -14,8 +14,8 @@ class category(models.Model):
         verbose_name_plural = 'categories'
 
 
-    def gey_url(self):
-            return reverse('products_by_category', args={self.slug})
+    def get_url(self):
+            return reverse('products_by_category', args=[self.slug])
 
 
     def __str__(self):

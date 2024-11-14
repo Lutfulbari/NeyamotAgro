@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
+
 {% load static %}
 
 {% block content %}
 
 <!-- ========================= SECTION MAIN ========================= -->
+ 
 <section class="section-intro padding-y-sm">
 <div class="container">
 
@@ -16,6 +18,7 @@
 <!-- ========================= SECTION MAIN END// ========================= -->
 
 <!-- ========================= SECTION  ========================= -->
+
 <section class="section-name padding-y-sm">
 
 <div class="container">
@@ -25,11 +28,9 @@
 	<h3 class="section-title">Popular products</h3>
 </header><!-- sect-heading -->
 
-	
-<div class="row">
-	
-	{% for product in products %}
 
+<div class="row">
+	{% for product in products %}
 	<div class="col-md-3">
 		<div class="card card-product-grid">
 			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
@@ -39,20 +40,13 @@
 			</figcaption>
 		</div>
 	</div> <!-- col.// -->
-
 	{% endfor %}
-
 </div> <!-- row.// -->
-
-
 </div><!-- container // -->
 </section>
+
 <!-- ========================= SECTION  END// ========================= -->
-
-
 
 </body>
 </html>
-
-
-{% endblock %}
+<!--{% endblock %} -->
