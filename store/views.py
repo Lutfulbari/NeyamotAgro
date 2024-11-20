@@ -8,10 +8,7 @@ from carts.views import _cart_id
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.http import HttpResponse
 
-
-
-
-#  Create your views here.
+# Create your views here.
 
 def store(request, category_slug=None):
      categories = None
