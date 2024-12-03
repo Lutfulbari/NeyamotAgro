@@ -19,7 +19,6 @@ class Product(models.Model):
     def get_url(self):
         return reverse('product_detail', args=[self.category.slug, self.slug])
 
-
     def __str__(self):
         return self.product_name
 
@@ -42,7 +41,6 @@ class Variation(models.Model):
      created_date = models.DateTimeField(auto_now=True)
 
      objects = VariationManager()
-
 
      def __str__(self):
         return self.variation_value
