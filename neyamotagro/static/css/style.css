@@ -51,7 +51,7 @@ p,
 ol,
 ul,
 li,
-{
+    {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -218,15 +218,17 @@ footer .copy_right {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 footer .copy_right p {
     color: white;
     font-size: 13px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
-footer .copy_right p a{
+
+footer .copy_right p a {
     color: red;
-    
+
 }
 
 

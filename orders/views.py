@@ -123,7 +123,7 @@ def place_order(request, total=0, quantity=0):
             data.save()
 
             order = Order.objects.get(user=current_user, is_ordered=False, order_number=order_number)   
-            contex = {
+            context = {
                 'order' : order,
                 'cart_items' : cart_items,
                 'total' : total,
@@ -132,7 +132,7 @@ def place_order(request, total=0, quantity=0):
 
             }
 
-            return render(request, 'orders/payments.html', contex)
+            return render(request, 'orders/payments.html', context)
     else:
         return redirect('checkout')
 

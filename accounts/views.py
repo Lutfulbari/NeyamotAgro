@@ -50,10 +50,10 @@ def register(request):
             return redirect('/accounts/login/?command=verification&email='+email)
     else:
         form = RegistrationForm()
-    contex = {
+    context = {
         'form': form, 
     }
-    return render(request, 'accounts/register.html', contex)
+    return render(request, 'accounts/register.html', context)
 
 def login(request):
     if request.method == 'POST':
