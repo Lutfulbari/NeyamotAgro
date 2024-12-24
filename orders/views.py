@@ -15,12 +15,14 @@ def payments(request):
     body = json.lods(request.body)
 
     order = order.object.get(user=request.user, is_order=False, order=body['orderID'])
-    # store tarnssection details 
+    
+    # store transection details 
+
     payment = Payment(
         user = request.user,
         payment_id = body['tarnsID'],
         payment_method = body['payment_method'],
-        amount_paid = order.order_totla,
+        amount_paid = order.order_total,
         status = body['status'],
     )
     payment.save()
@@ -57,7 +59,7 @@ def payments(request):
 
 
     mail_subject = 'Thank You for your order'
-    message = render_to_string('orders/orders_recieved_email.html', {
+    message = render_to_string('orders/orders_received_email.html.html', {
         'user': request.user,
         'order': order,
         })
@@ -129,7 +131,6 @@ def place_order(request, total=0, quantity=0):
                 'total' : total,
                 'tax' : tax,
                 'grand_total' : grand_total,
-
             }
 
             return render(request, 'orders/payments.html', context)

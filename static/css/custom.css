@@ -34,7 +34,7 @@ label:hover ~ input:checked ~ label{
     color: #cc9000;
 }
 .rating-stars i{
-    color: #b11c1c !important;
+    color: #000000 !important;
 }
 
 ul.thumb{
